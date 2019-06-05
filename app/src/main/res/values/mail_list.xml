@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mail_list">
+        <item>minwook@teruten.com</item>
+        <item>mjikim@teruten.com</item>
+    </string-array>
+</resources>

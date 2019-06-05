@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category_list">
+        <item>직출</item>
+        <item>외근</item>
+        <item>휴가</item>
+    </string-array>
+</resources>

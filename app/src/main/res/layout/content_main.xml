@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="address.teruten.com.terutenaddress.Main2Activity"
+    tools:showIn="@layout/app_bar_main">
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:id="@+id/web_view_load_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:progressBackgroundTint="#e53935"
+        android:progressTint="#c62828"
+        android:visibility="gone" />
+
+    <address.teruten.com.terutenaddress.webkit.CustomWebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webView"
+        android:layout_below="@+id/web_view_load_progress_bar">
+
+    </address.teruten.com.terutenaddress.webkit.CustomWebView>
+
+</RelativeLayout>

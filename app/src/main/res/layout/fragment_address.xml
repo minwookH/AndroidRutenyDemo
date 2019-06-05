@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="address.teruten.com.terutenaddress.ui.address.AddressFragment">
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:id="@+id/address_web_view_load_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:progressDrawable="@drawable/custom_progress_bar"
+        android:visibility="gone" />
+
+    <address.teruten.com.terutenaddress.webkit.CustomWebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/address_webView"
+        android:layout_below="@+id/address_web_view_load_progress_bar">
+
+    </address.teruten.com.terutenaddress.webkit.CustomWebView>
+
+</RelativeLayout>

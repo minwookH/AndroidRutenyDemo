@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<Preference
+        android:key="outside_report"
+        android:title="외근보고" />-->
+    <!--<CheckBoxPreference
+        android:defaultValue="true"
+        android:key="isNotification"
+        android:summaryOff="알림을 사용하지 않습니다"
+        android:summaryOn="알림을 사용합니다"
+        android:title="알림여부"/>-->
+
+    <PreferenceCategory
+        android:title="알림"
+        android:key="pref_key_notification_settings">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="setNotification"
+            android:switchTextOff="OFF"
+            android:switchTextOn="ON"
+            android:title="알림" />
+
+        <!--<CheckBoxPreference
+            android:defaultValue="true"
+            android:key="isNotificationSound"
+            android:dependency="setNotification"
+            android:summaryOff="소리를 사용하지 않습니다"
+            android:summaryOn="소리를 사용합니다"
+            android:title="소리"/>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="isNotificationVibrate"
+            android:dependency="setNotification"
+            android:summaryOff="진동을 사용하지 않습니다"
+            android:summaryOn="진동을 사용합니다"
+            android:title="진동"/>-->
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="편의"
+        android:key="pref_key_usefull_settings">
+        <Preference
+            android:key="cafeteria"
+            android:title="구내식당 메뉴" />
+        <Preference
+            android:key="outside_report"
+            android:title="외근보고" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="계정"
+        android:key="pref_key_user_settings">
+        <Preference
+            android:key="logout"
+            android:title="로그아웃" />
+    </PreferenceCategory>
+
+</android.support.v7.preference.PreferenceScreen>
